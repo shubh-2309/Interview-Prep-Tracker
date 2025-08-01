@@ -1,5 +1,5 @@
-Interview Prep Tracker
-A responsive HTML and CSS website built to help college students track their placement preparation. It includes features to manage DSA progress, company-wise prep, mock interviews, and key resources — all in one organized dashboard.
+*Interview Prep Tracker*
+- A responsive HTML and CSS website built to help college students track their placement preparation. It includes features to manage DSA progress, company-wise prep, mock interviews, and key resources — all in one organized dashboard.
 
 Features
 - Landing Page with quick access buttons
