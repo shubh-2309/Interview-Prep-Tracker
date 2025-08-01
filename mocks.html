@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mock Interviews - Interview Prep Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Interview Prep Tracker</a>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="dsa.html">DSA Tracker</a></li>
+                <li><a href="company.html">Company Prep</a></li>
+                <li><a href="mocks.html">Mocks</a></li>
+                <li><a href="prep.html">HR/Tech Prep</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-nav">
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="dsa.html">📈 DSA Tracker</a></li>
+                <li><a href="company.html">🏢 Company Prep</a></li>
+                <li><a href="mocks.html" class="active">🎯 Mocks</a></li>
+                <li><a href="prep.html">💼 HR/Tech Prep</a></li>
+                <li><a href="resources.html">📚 Resources</a></li>
+                <li><a href="profile.html">👤 Profile</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="section-header">
+                <h1>Mock Interview Tracker</h1>
+                <p>Track your mock interview performance and identify areas for improvement</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="grid grid-4 mb-4">
+                <div class="card text-center">
+                    <div style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+                    <h3>Total Mocks</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">12</p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 0.5rem;">⭐</div>
+                    <h3>Average Rating</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);">4.2</p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">💻</div>
+                    <h3>Technical</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">8</p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 0.5rem;">👥</div>
+                    <h3>HR/Behavioral</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);">4</p>
+                </div>
+            </div>
+
+            <!-- Add New Mock Button -->
+            <div style="margin-bottom: 2rem;">
+                <a href="#" class="btn btn-primary">➕ Add New Mock</a>
+            </div>
+
+            <!-- Mock Interviews Table -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Company</th>
+                            <th>Rating</th>
+                            <th>Notes</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dec 15, 2024</td>
+                            <td><span class="tag" style="background: var(--primary-color); color: white;">Technical</span></td>
+                            <td>Google</td>
+                            <td>
+                                <div style="display: flex; align-items: center;">
+                                    <span style="color: #FFD700;">⭐⭐⭐⭐⭐</span>
+                                    <span style="margin-left: 0.5rem;">5/5</span>
+                                </div>
+                            </td>
+                            <td>Excellent problem-solving skills. Need to work on system design.</td>
+                            <td>
+                                <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dec 12, 2024</td>
+                            <td><span class="tag" style="background: var(--accent-color); color: var(--text-dark);">HR</span></td>
+                            <td>Amazon</td>
+                            <td>
+                                <div style="display: flex; align-items: center;">
+                                    <span style="color: #FFD700;">⭐⭐⭐⭐</span>
+                                    <span style="margin-left: 0.5rem;">4/5</span>
+                                </div>
+                            </td>
+                            <td>Good behavioral answers. Need to prepare more leadership examples.</td>
+                            <td>
+                                <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dec 10, 2024</td>
+                            <td><span class="tag" style="background: var(--primary-color); color: white;">Technical</span></td>
+                            <td>Microsoft</td>
+                            <td>
+                                <div style="display: flex; align-items: center;">
+                                    <span style="color: #FFD700;">⭐⭐⭐</span>
+                                    <span style="margin-left: 0.5rem;">3/5</span>
+                                </div>
+                            </td>
+                            <td>Struggled with graph algorithms. Need more practice with DFS/BFS.</td>
+                            <td>
+                                <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dec 8, 2024</td>
+                            <td><span class="tag" style="background: var(--accent-color); color: var(--text-dark);">HR</span></td>
+                            <td>Meta</td>
+                            <td>
+                                <div style="display: flex; align-items: center;">
+                                    <span style="color: #FFD700;">⭐⭐⭐⭐⭐</span>
+                                    <span style="margin-left: 0.5rem;">5/5</span>
+                                </div>
+                            </td>
+                            <td>Excellent communication skills. Well-prepared STAR method answers.</td>
+                            <td>
+                                <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dec 5, 2024</td>
+                            <td><span class="tag" style="background: var(--primary-color); color: white;">Technical</span></td>
+                            <td>Apple</td>
+                            <td>
+                                <div style="display: flex; align-items: center;">
+                                    <span style="color: #FFD700;">⭐⭐⭐</span>
+                                    <span style="margin-left: 0.5rem;">3/5</span>
+                                </div>
+                            </td>
+                            <td>Good algorithmic thinking but need to improve code optimization.</td>
+                            <td>
+                                <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Dec 3, 2024</td>
+                            <td><span class="tag" style="background: var(--primary-color); color: white;">Technical</span></td>
+                            <td>Netflix</td>
+                            <td>
+                                <div style="display: flex; align-items: center;">
+                                    <span style="color: #FFD700;">⭐⭐⭐⭐</span>
+                                    <span style="margin-left: 0.5rem;">4/5</span>
+                                </div>
+                            </td>
+                            <td>Strong system design skills. Need to work on time complexity analysis.</td>
+                            <td>
+                                <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nov 30, 2024</td>
+                            <td><span class="tag" style="background: var(--accent-color); color: var(--text-dark);">HR</span></td>
+                            <td>Uber</td>
+                            <td>
+                                <div style="display: flex; align-items: center;">
+                                    <span style="color: #FFD700;">⭐⭐⭐</span>
+                                    <span style="margin-left: 0.5rem;">3/5</span>
+                                </div>
+                            </td>
+                            <td>Need to prepare more specific examples for behavioral questions.</td>
+                            <td>
+                                <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Edit</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Nov 28, 2024</td>
+                            <td><span class="tag" style="background: var(--primary-color); color: white;">Technical</span></td>
+                            <td>Adobe</td>
+                            <td>
+                                <div style="display: flex; align-items: center;">
+                                    <span style="color: #FFD700;">⭐⭐⭐⭐</span>
+                                    <span style="margin-left: 0.5rem;">4/5</span>
+                                </div>
+                            </td>
+                            <td>Good problem-solving approach. Need to work on edge cases.</td>
+                            <td>
+                                <a href="#" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.875rem;">Edit</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Performance Analysis -->
+            <div class="grid grid-2 mt-4">
+                <div class="card">
+                    <h3>Performance Trends</h3>
+                    <div style="margin: 1rem 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span>Technical Interviews</span>
+                            <span>4.1/5</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 82%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin: 1rem 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span>HR/Behavioral</span>
+                            <span>4.3/5</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 86%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin: 1rem 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span>Communication</span>
+                            <span>4.5/5</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3>Areas for Improvement</h3>
+                    <div style="margin: 1rem 0;">
+                        <div style="background: var(--light-gray); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                            <h4 style="margin-bottom: 0.5rem;">🔴 High Priority</h4>
+                            <ul style="margin-left: 1.5rem;">
+                                <li>Graph algorithms (DFS/BFS)</li>
+                                <li>System design depth</li>
+                                <li>Time complexity analysis</li>
+                            </ul>
+                        </div>
+                        <div style="background: var(--light-gray); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                            <h4 style="margin-bottom: 0.5rem;">🟡 Medium Priority</h4>
+                            <ul style="margin-left: 1.5rem;">
+                                <li>Code optimization</li>
+                                <li>Edge case handling</li>
+                                <li>Leadership examples</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Upcoming Mocks -->
+            <div class="card mt-4">
+                <h3>Upcoming Mock Interviews</h3>
+                <div class="grid grid-2" style="margin-top: 1.5rem;">
+                    <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 8px;">
+                        <h4>Technical Mock - Google</h4>
+                        <p style="margin-bottom: 1rem; color: var(--dark-gray);">Tomorrow, 2:00 PM</p>
+                        <div class="company-tags">
+                            <span class="tag">DSA</span>
+                            <span class="tag">System Design</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Join Meeting</a>
+                    </div>
+                    
+                    <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 8px;">
+                        <h4>HR Mock - Amazon</h4>
+                        <p style="margin-bottom: 1rem; color: var(--dark-gray);">Friday, 10:00 AM</p>
+                        <div class="company-tags">
+                            <span class="tag">Behavioral</span>
+                            <span class="tag">Leadership</span>
+                            <span class="tag">STAR Method</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="margin-top: 1rem;">Join Meeting</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2024 Interview Prep Tracker. All rights reserved.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html> 

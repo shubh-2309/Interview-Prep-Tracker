@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Interview Prep Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Interview Prep Tracker</a>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="dsa.html">DSA Tracker</a></li>
+                <li><a href="company.html">Company Prep</a></li>
+                <li><a href="mocks.html">Mocks</a></li>
+                <li><a href="prep.html">HR/Tech Prep</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-nav">
+                <li><a href="dashboard.html">📊 Dashboard</a></li>
+                <li><a href="dsa.html">📈 DSA Tracker</a></li>
+                <li><a href="company.html">🏢 Company Prep</a></li>
+                <li><a href="mocks.html">🎯 Mocks</a></li>
+                <li><a href="prep.html">💼 HR/Tech Prep</a></li>
+                <li><a href="resources.html">📚 Resources</a></li>
+                <li><a href="profile.html" class="active">👤 Profile</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="section-header">
+                <h1>Profile</h1>
+                <p>Manage your account and view your progress summary</p>
+            </div>
+
+            <!-- Profile Information -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Personal Information</h3>
+                    <div style="display: flex; align-items: center; margin-bottom: 2rem;">
+                        <div style="width: 80px; height: 80px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; font-weight: bold; margin-right: 1.5rem;">JS</div>
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem;">John Smith</h4>
+                            <p style="color: var(--dark-gray); margin-bottom: 0.5rem;">john.smith@email.com</p>
+                            <p style="color: var(--dark-gray);">Computer Science Student</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" value="John Smith">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" value="john.smith@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" value="+1 (555) 123-4567">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="university">University</label>
+                        <input type="text" id="university" name="university" value="Tech University">
+                    </div>
+
+                    <button class="btn btn-primary">Update Profile</button>
+                </div>
+
+                <div class="card">
+                    <h3>Resume</h3>
+                    <div style="border: 2px dashed var(--medium-gray); border-radius: 8px; padding: 2rem; text-align: center; margin-bottom: 1rem;">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📄</div>
+                        <h4>Resume.pdf</h4>
+                        <p style="color: var(--dark-gray); margin-bottom: 1rem;">Last updated: Dec 15, 2024</p>
+                        <div style="display: flex; gap: 1rem; justify-content: center;">
+                            <button class="btn btn-secondary">Download</button>
+                            <button class="btn btn-primary">Upload New</button>
+                        </div>
+                    </div>
+
+                    <div style="background: var(--light-gray); padding: 1rem; border-radius: 8px;">
+                        <h4 style="margin-bottom: 1rem;">Resume Tips</h4>
+                        <ul style="margin-left: 1.5rem;">
+                            <li>Keep it to 1-2 pages</li>
+                            <li>Highlight relevant projects</li>
+                            <li>Include technical skills</li>
+                            <li>Use action verbs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Summary -->
+            <div class="card mt-4">
+                <h3>Progress Summary</h3>
+                <div class="grid grid-4">
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.5rem;">📊</div>
+                        <h4>DSA Progress</h4>
+                        <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">65%</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; color: var(--accent-color); margin-bottom: 0.5rem;">🏢</div>
+                        <h4>Companies</h4>
+                        <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);">8</p>
+                        <p>Target companies</p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.5rem;">🎯</div>
+                        <h4>Mock Interviews</h4>
+                        <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">12</p>
+                        <p>Completed</p>
+                    </div>
+
+                    <div style="text-align: center;">
+                        <div style="font-size: 2rem; color: var(--accent-color); margin-bottom: 0.5rem;">⭐</div>
+                        <h4>Average Rating</h4>
+                        <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);">4.2</p>
+                        <p>Out of 5</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="card mt-4">
+                <h3>Recent Activity</h3>
+                <div style="margin: 1rem 0;">
+                    <div style="display: flex; align-items: center; padding: 1rem; border-bottom: 1px solid var(--medium-gray);">
+                        <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">📈</div>
+                        <div style="flex: 1;">
+                            <h4 style="margin-bottom: 0.25rem;">Completed Arrays Topic</h4>
+                            <p style="color: var(--dark-gray); margin: 0;">Updated DSA progress to 80% in Arrays</p>
+                        </div>
+                        <span style="color: var(--dark-gray); font-size: 0.875rem;">2 hours ago</span>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding: 1rem; border-bottom: 1px solid var(--medium-gray);">
+                        <div style="width: 40px; height: 40px; background: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">🎯</div>
+                        <div style="flex: 1;">
+                            <h4 style="margin-bottom: 0.25rem;">Mock Interview Completed</h4>
+                            <p style="color: var(--dark-gray); margin: 0;">Technical mock with Google - Rating: 5/5</p>
+                        </div>
+                        <span style="color: var(--dark-gray); font-size: 0.875rem;">1 day ago</span>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding: 1rem; border-bottom: 1px solid var(--medium-gray);">
+                        <div style="width: 40px; height: 40px; background: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">🏢</div>
+                        <div style="flex: 1;">
+                            <h4 style="margin-bottom: 0.25rem;">Added Amazon to Targets</h4>
+                            <p style="color: var(--dark-gray); margin: 0;">Started preparation for Amazon interviews</p>
+                        </div>
+                        <span style="color: var(--dark-gray); font-size: 0.875rem;">3 days ago</span>
+                    </div>
+
+                    <div style="display: flex; align-items: center; padding: 1rem;">
+                        <div style="width: 40px; height: 40px; background: var(--accent-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin-right: 1rem;">📚</div>
+                        <div style="flex: 1;">
+                            <h4 style="margin-bottom: 0.25rem;">Updated Resume</h4>
+                            <p style="color: var(--dark-gray); margin: 0;">Uploaded new version of resume</p>
+                        </div>
+                        <span style="color: var(--dark-gray); font-size: 0.875rem;">1 week ago</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings -->
+            <div class="card mt-4">
+                <h3>Account Settings</h3>
+                <div class="grid grid-2">
+                    <div>
+                        <h4>Security</h4>
+                        <div style="margin: 1rem 0;">
+                            <button class="btn btn-secondary" style="margin-bottom: 0.5rem; width: 100%;">Change Password</button>
+                            <button class="btn btn-secondary" style="margin-bottom: 0.5rem; width: 100%;">Two-Factor Authentication</button>
+                            <button class="btn btn-secondary" style="width: 100%;">Privacy Settings</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h4>Preferences</h4>
+                        <div style="margin: 1rem 0;">
+                            <button class="btn btn-secondary" style="margin-bottom: 0.5rem; width: 100%;">Notification Settings</button>
+                            <button class="btn btn-secondary" style="margin-bottom: 0.5rem; width: 100%;">Theme Preferences</button>
+                            <button class="btn btn-secondary" style="width: 100%;">Export Data</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2024 Interview Prep Tracker. All rights reserved.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html> 

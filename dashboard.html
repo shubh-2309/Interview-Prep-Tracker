@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Interview Prep Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">Interview Prep Tracker</a>
+            <ul class="nav-links">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="dsa.html">DSA Tracker</a></li>
+                <li><a href="company.html">Company Prep</a></li>
+                <li><a href="mocks.html">Mocks</a></li>
+                <li><a href="prep.html">HR/Tech Prep</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul class="sidebar-nav">
+                <li><a href="dashboard.html" class="active">📊 Dashboard</a></li>
+                <li><a href="dsa.html">📈 DSA Tracker</a></li>
+                <li><a href="company.html">🏢 Company Prep</a></li>
+                <li><a href="mocks.html">🎯 Mocks</a></li>
+                <li><a href="prep.html">💼 HR/Tech Prep</a></li>
+                <li><a href="resources.html">📚 Resources</a></li>
+                <li><a href="profile.html">👤 Profile</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="section-header">
+                <h1>Dashboard</h1>
+                <p>Welcome back! Here's an overview of your placement preparation progress.</p>
+            </div>
+
+            <!-- Overview Cards -->
+            <div class="grid grid-4 mb-4">
+                <div class="card text-center">
+                    <div style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+                    <h3>DSA Progress</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">65%</p>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 65%;"></div>
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 0.5rem;">🏢</div>
+                    <h3>Companies</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);">8</p>
+                    <p>Target companies</p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+                    <h3>Mock Interviews</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">12</p>
+                    <p>Completed</p>
+                </div>
+
+                <div class="card text-center">
+                    <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 0.5rem;">⭐</div>
+                    <h3>Average Rating</h3>
+                    <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);">4.2</p>
+                    <p>Out of 5</p>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="grid grid-2">
+                <div class="card">
+                    <h3>Recent DSA Progress</h3>
+                    <div style="margin: 1rem 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span>Arrays</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin: 1rem 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span>Strings</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                    <div style="margin: 1rem 0;">
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <span>Linked Lists</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                    <a href="dsa.html" class="btn btn-primary" style="margin-top: 1rem;">View All Progress</a>
+                </div>
+
+                <div class="card">
+                    <h3>Upcoming Mock Interviews</h3>
+                    <div style="margin: 1rem 0;">
+                        <div style="background: var(--light-gray); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                            <h4 style="margin-bottom: 0.5rem;">Technical Mock - Google</h4>
+                            <p style="margin-bottom: 0.5rem; color: var(--dark-gray);">Tomorrow, 2:00 PM</p>
+                            <span class="tag">DSA</span>
+                            <span class="tag">System Design</span>
+                        </div>
+                        <div style="background: var(--light-gray); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                            <h4 style="margin-bottom: 0.5rem;">HR Mock - Amazon</h4>
+                            <p style="margin-bottom: 0.5rem; color: var(--dark-gray);">Friday, 10:00 AM</p>
+                            <span class="tag">Behavioral</span>
+                            <span class="tag">Leadership</span>
+                        </div>
+                    </div>
+                    <a href="mocks.html" class="btn btn-primary">Schedule Mock</a>
+                </div>
+            </div>
+
+            <!-- Company Preparation Status -->
+            <div class="card mt-4">
+                <h3>Company Preparation Status</h3>
+                <div class="grid grid-3" style="margin-top: 1.5rem;">
+                    <div class="company-card">
+                        <h4>Google</h4>
+                        <div style="margin: 1rem 0;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span>Online Test</span>
+                                <span>✅</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span>Tech Round 1</span>
+                                <span>⏳</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span>Tech Round 2</span>
+                                <span>⏳</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>HR Round</span>
+                                <span>⏳</span>
+                            </div>
+                        </div>
+                        <div class="company-tags">
+                            <span class="tag">DSA</span>
+                            <span class="tag">System Design</span>
+                        </div>
+                    </div>
+
+                    <div class="company-card">
+                        <h4>Amazon</h4>
+                        <div style="margin: 1rem 0;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span>Online Test</span>
+                                <span>✅</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span>Tech Round 1</span>
+                                <span>✅</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span>Tech Round 2</span>
+                                <span>⏳</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>HR Round</span>
+                                <span>⏳</span>
+                            </div>
+                        </div>
+                        <div class="company-tags">
+                            <span class="tag">DSA</span>
+                            <span class="tag">Leadership</span>
+                        </div>
+                    </div>
+
+                    <div class="company-card">
+                        <h4>Microsoft</h4>
+                        <div style="margin: 1rem 0;">
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span>Online Test</span>
+                                <span>⏳</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span>Tech Round 1</span>
+                                <span>⏳</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                                <span>Tech Round 2</span>
+                                <span>⏳</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between;">
+                                <span>HR Round</span>
+                                <span>⏳</span>
+                            </div>
+                        </div>
+                        <div class="company-tags">
+                            <span class="tag">DSA</span>
+                            <span class="tag">OS</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="company.html" class="btn btn-primary" style="margin-top: 1.5rem;">View All Companies</a>
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="card mt-4">
+                <h3>Quick Actions</h3>
+                <div class="grid grid-4" style="margin-top: 1.5rem;">
+                    <a href="dsa.html" class="btn btn-secondary">📈 Track DSA</a>
+                    <a href="mocks.html" class="btn btn-secondary">🎯 Schedule Mock</a>
+                    <a href="prep.html" class="btn btn-secondary">💼 HR Prep</a>
+                    <a href="resources.html" class="btn btn-secondary">📚 Resources</a>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2024 Interview Prep Tracker. All rights reserved.</p>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html> 
