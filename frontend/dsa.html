@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSA Tracker - Interview Prep Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Interview Prep Tracker</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">📊 Dashboard</a></li>
+        <li><a href="dsa.html" class="active">📈 DSA Tracker</a></li>
+        <li><a href="company.html">🏢 Company Prep</a></li>
+        <li><a href="mocks.html">🎯 Mocks</a></li>
+        <li><a href="prep.html">💼 HR/Tech Prep</a></li>
+        <li><a href="resources.html">📚 Resources</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <div class="section-header">
+        <h1>DSA Progress Tracker</h1>
+        <p>Track your progress across Data Structures and Algorithms</p>
+      </div>
+      <div class="card mb-4">
+        <form data-dsa-form>
+          <div class="grid grid-3">
+            <div class="form-group">
+              <label>Title</label>
+              <input name="title" placeholder="e.g., Sliding Window" required />
+            </div>
+            <div class="form-group">
+              <label>Level</label>
+              <input name="level" placeholder="Beginner/Intermediate/Advanced" required />
+            </div>
+            <div class="form-group">
+              <label>Status</label>
+              <input name="status" placeholder="Not started/In progress/Completed" required />
+            </div>
+          </div>
+          <button class="btn btn-primary" type="submit">Add Topic</button>
+        </form>
+      </div>
+      <div class="grid grid-2" data-dsa-list></div>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div><p>&copy; 2024 Interview Prep Tracker. All rights reserved.</p></div>
+      <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/dsa.js"></script>
+</body>
+</html>
+

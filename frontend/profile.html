@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile - Interview Prep Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Interview Prep Tracker</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">📊 Dashboard</a></li>
+        <li><a href="dsa.html">📈 DSA Tracker</a></li>
+        <li><a href="company.html">🏢 Company Prep</a></li>
+        <li><a href="mocks.html">🎯 Mocks</a></li>
+        <li><a href="prep.html">💼 HR/Tech Prep</a></li>
+        <li><a href="resources.html">📚 Resources</a></li>
+        <li><a href="profile.html" class="active">👤 Profile</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <div class="section-header"><h1>Profile</h1><p>Manage your account</p></div>
+      <div class="card">
+        <h3>Personal Information</h3>
+        <div class="form-group"><label for="fullName">Full Name</label><input id="fullName" name="fullName" /></div>
+        <div class="form-group"><label for="email">Email</label><input id="email" name="email" disabled /></div>
+        <button class="btn btn-primary">Update Profile</button>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div><p>&copy; 2024 Interview Prep Tracker. All rights reserved.</p></div>
+      <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/profile.js"></script>
+</body>
+</html>
+

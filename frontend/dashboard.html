@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Interview Prep Tracker</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo">Interview Prep Tracker</a>
+        <ul class="nav-links">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="dsa.html">DSA Tracker</a></li>
+          <li><a href="company.html">Company Prep</a></li>
+          <li><a href="mocks.html">Mocks</a></li>
+          <li><a href="prep.html">HR/Tech Prep</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <ul class="sidebar-nav">
+          <li><a href="dashboard.html" class="active">📊 Dashboard</a></li>
+          <li><a href="dsa.html">📈 DSA Tracker</a></li>
+          <li><a href="company.html">🏢 Company Prep</a></li>
+          <li><a href="mocks.html">🎯 Mocks</a></li>
+          <li><a href="prep.html">💼 HR/Tech Prep</a></li>
+          <li><a href="resources.html">📚 Resources</a></li>
+          <li><a href="profile.html">👤 Profile</a></li>
+        </ul>
+      </aside>
+
+      <main class="main-content">
+        <div class="section-header">
+          <h1>Dashboard</h1>
+          <p>Welcome back! Here's an overview of your placement preparation progress.</p>
+        </div>
+
+        <div class="grid grid-4 mb-4">
+          <div class="card text-center">
+            <div style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">📊</div>
+            <h3>DSA Progress</h3>
+            <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);" data-metric="dsaProgress">0%</p>
+            <div class="progress-bar">
+              <div class="progress-fill" style="width: 0%" data-metric="dsaProgressFill"></div>
+            </div>
+          </div>
+
+          <div class="card text-center">
+            <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 0.5rem;">🏢</div>
+            <h3>Companies</h3>
+            <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);" data-metric="companiesApplied">0</p>
+            <p>Target companies</p>
+          </div>
+
+          <div class="card text-center">
+            <div style="color: var(--primary-color); font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+            <h3>Mock Interviews</h3>
+            <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">—</p>
+            <p>Completed</p>
+          </div>
+
+          <div class="card text-center">
+            <div style="color: var(--accent-color); font-size: 2rem; margin-bottom: 0.5rem;">⭐</div>
+            <h3>Average Rating</h3>
+            <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);" data-metric="avgRating">0</p>
+            <p>Out of 5</p>
+          </div>
+        </div>
+
+        <div class="card mt-4">
+          <h3>Quick Actions</h3>
+          <div class="grid grid-4" style="margin-top: 1.5rem;">
+            <a href="dsa.html" class="btn btn-secondary">📈 Track DSA</a>
+            <a href="mocks.html" class="btn btn-secondary">🎯 Schedule Mock</a>
+            <a href="prep.html" class="btn btn-secondary">💼 HR Prep</a>
+            <a href="resources.html" class="btn btn-secondary">📚 Resources</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div><p>&copy; 2024 Interview Prep Tracker. All rights reserved.</p></div>
+        <ul class="footer-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="module" src="js/api.js"></script>
+    <script type="module" src="js/auth.js"></script>
+    <script type="module" src="js/dashboard.js"></script>
+  </body>
+</html>
+

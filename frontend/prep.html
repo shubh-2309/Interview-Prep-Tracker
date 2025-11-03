@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HR & Tech Prep - Interview Prep Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Interview Prep Tracker</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="dsa.html">DSA Tracker</a></li>
+        <li><a href="company.html">Company Prep</a></li>
+        <li><a href="mocks.html">Mocks</a></li>
+        <li><a href="prep.html" class="active">HR/Tech Prep</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">📊 Dashboard</a></li>
+        <li><a href="dsa.html">📈 DSA Tracker</a></li>
+        <li><a href="company.html">🏢 Company Prep</a></li>
+        <li><a href="mocks.html">🎯 Mocks</a></li>
+        <li><a href="prep.html" class="active">💼 HR/Tech Prep</a></li>
+        <li><a href="resources.html">📚 Resources</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <div class="section-header">
+        <h1>HR & Technical Preparation</h1>
+        <p>Prepare for both technical and behavioral interview questions</p>
+      </div>
+
+      <div class="card mb-4">
+        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">💻 Technical Questions</h2>
+        <div class="grid grid-2">
+          <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+            <h3>Data Structures</h3>
+            <ul style="margin-left: 1.5rem; margin-top: .75rem;">
+              <li>Array vs Linked List</li>
+              <li>Stack vs Queue</li>
+              <li>Trees & Graphs basics</li>
+              <li>Hashing & Maps</li>
+            </ul>
+          </div>
+          <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+            <h3>Algorithms</h3>
+            <ul style="margin-left: 1.5rem; margin-top: .75rem;">
+              <li>Time/Space Complexity</li>
+              <li>Sorting & Searching</li>
+              <li>Dynamic Programming</li>
+              <li>Greedy & Backtracking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 style="color: var(--accent-color); margin-bottom: 1.5rem;">👥 HR Questions</h2>
+        <div class="grid grid-2">
+          <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+            <h3>Common Questions</h3>
+            <ul style="margin-left: 1.5rem; margin-top: .75rem;">
+              <li>Tell me about yourself</li>
+              <li>Strengths & Weaknesses</li>
+              <li>Leadership & teamwork</li>
+              <li>Handling conflict/failure</li>
+            </ul>
+          </div>
+          <div style="background: var(--light-gray); padding: 1.5rem; border-radius: 8px; margin-bottom: 1rem;">
+            <h3>Tips</h3>
+            <ul style="margin-left: 1.5rem; margin-top: .75rem;">
+              <li>Use the STAR method</li>
+              <li>Quantify impact</li>
+              <li>Align with company values</li>
+              <li>Practice mock answers</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="mb-2">📝 Your Prep Notes</h2>
+        <form id="prepNotesForm" class="mb-2">
+          <div class="grid grid-2">
+            <div class="form-group"><label>Title</label><input name="title" placeholder="e.g., Tell me about yourself" required /></div>
+            <div class="form-group"><label>Notes</label><input name="content" placeholder="Key points..." required /></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Add Note</button>
+        </form>
+        <div id="prepNotes" class="grid grid-2"></div>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div><p>&copy; 2024 Interview Prep Tracker. All rights reserved.</p></div>
+      <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/prep.js"></script>
+</body>
+</html>
+

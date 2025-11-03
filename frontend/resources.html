@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resources - Interview Prep Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">Interview Prep Tracker</a>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="dsa.html">DSA Tracker</a></li>
+        <li><a href="company.html">Company Prep</a></li>
+        <li><a href="mocks.html">Mocks</a></li>
+        <li><a href="prep.html">HR/Tech Prep</a></li>
+        <li><a href="resources.html" class="active">Resources</a></li>
+        <li><a href="profile.html">Profile</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <ul class="sidebar-nav">
+        <li><a href="dashboard.html">📊 Dashboard</a></li>
+        <li><a href="dsa.html">📈 DSA Tracker</a></li>
+        <li><a href="company.html">🏢 Company Prep</a></li>
+        <li><a href="mocks.html">🎯 Mocks</a></li>
+        <li><a href="prep.html">💼 HR/Tech Prep</a></li>
+        <li><a href="resources.html" class="active">📚 Resources</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+      <div class="section-header">
+        <h1>Resources</h1>
+        <p>Curated resources to help you excel in interviews</p>
+      </div>
+      <div class="card mb-4">
+        <h3>Add Resource</h3>
+        <form data-resource-form>
+          <div class="grid grid-4">
+            <div class="form-group"><label>Title</label><input name="title" required /></div>
+            <div class="form-group"><label>URL</label><input name="url" required /></div>
+            <div class="form-group"><label>Type</label><input name="type" placeholder="Article|Video|Course|Book" required /></div>
+            <div class="form-group"><label>Tags (comma)</label><input name="tags" placeholder="DSA,System Design" /></div>
+          </div>
+          <button class="btn btn-primary" type="submit">Add</button>
+        </form>
+      </div>
+
+      <div class="grid grid-3" data-resource-list></div>
+
+      <div class="card mb-4">
+        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">💻 Coding Platforms</h2>
+        <div class="grid grid-3">
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:1rem;">🔴</div>
+            <h3>LeetCode</h3>
+            <p>Practice coding problems with detailed solutions</p>
+            <a class="btn btn-primary" href="https://leetcode.com" target="_blank">Visit</a>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:1rem;">🟢</div>
+            <h3>GeeksforGeeks</h3>
+            <p>Comprehensive tutorials and practice problems</p>
+            <a class="btn btn-primary" href="https://geeksforgeeks.org" target="_blank">Visit</a>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:1rem;">🟡</div>
+            <h3>HackerRank</h3>
+            <p>Sharpen skills with coding challenges</p>
+            <a class="btn btn-primary" href="https://hackerrank.com" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <h2 style="color: var(--accent-color); margin-bottom: 1.5rem;">🏗️ System Design</h2>
+        <div class="grid grid-3">
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:1rem;">📺</div>
+            <h3>Gaurav Sen</h3>
+            <p>System design videos with real-world examples</p>
+            <a class="btn btn-primary" href="https://youtube.com/c/GauravSen" target="_blank">Visit</a>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:1rem;">📚</div>
+            <h3>System Design Primer</h3>
+            <p>Comprehensive guide to design concepts</p>
+            <a class="btn btn-primary" href="https://github.com/donnemartin/system-design-primer" target="_blank">Visit</a>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:1rem;">🎯</div>
+            <h3>High Scalability</h3>
+            <p>Real-world case studies</p>
+            <a class="btn btn-primary" href="http://highscalability.com" target="_blank">Visit</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 style="color: var(--primary-color); margin-bottom: 1.5rem;">📄 Resume & Interview</h2>
+        <div class="grid grid-3">
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:1rem;">📝</div>
+            <h3>Resume Tips</h3>
+            <p>Craft a concise, achievement-driven resume</p>
+            <a class="btn btn-primary" href="#">Read More</a>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:1rem;">🎤</div>
+            <h3>Behavioral Prep</h3>
+            <p>Use STAR method for HR answers</p>
+            <a class="btn btn-primary" href="#">Read More</a>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:3rem; margin-bottom:1rem;">💼</div>
+            <h3>Interview Tips</h3>
+            <p>Best practices and checklists</p>
+            <a class="btn btn-primary" href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div><p>&copy; 2024 Interview Prep Tracker. All rights reserved.</p></div>
+      <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script type="module" src="js/api.js"></script>
+  <script type="module" src="js/auth.js"></script>
+  <script type="module" src="js/resources.js"></script>
+</body>
+</html>
+
